@@ -1,0 +1,141 @@
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 500px) {
+ html{
+ font-size: 5.49px;
+ width:100%;
+ height:auto;
+ }
+img {
+	max-width:100%; 
+ }
+video{
+	width:8.05rem;
+}
+}
+
+
+
+
+
+@media screen and (min-width: 750px) {
+ html{
+ font-size: 8.23px;
+ width:100%;
+ height:auto;
+ }
+img {
+	max-width:100%; 
+ }
+video{
+	width:12.07rem;
+}
+}
+
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (min-width: 1200px) {
+ html{
+ font-size: 13.17px;
+ width:auto;
+ height: auto;
+ }
+img {
+	max-width:100%; 
+ }
+video{
+	width:19.32rem;
+}
+}
+
+/*Risoluzione Francesco e Cristina*/
+@media screen and (min-width: 1366px) {
+ html {
+ font-size: 15px;
+ width:100%;
+ height:auto;
+ }
+ img {
+	max-width:100%; 
+ }
+video{
+	width:22rem;
+}
+}
+
+
+@media screen and (min-width: 1400px) {
+ html {
+ font-size: 17px;
+ width:100%;
+ height:auto;
+ }
+  img {
+	max-width:100%; 
+ }
+video{
+	width:22.54rem;
+}
+}
+
+/*risoluzione fabiana*/
+@media screen and (min-width: 1500px) {
+ html {
+ font-size: 17.10px;
+ width:100%;
+ height:auto;
+ }
+  img {
+	max-width:100%; 
+ }
+video{
+	width:22.54rem;
+}
+}
+
+@media screen and (min-width: 1600px) {
+ html {
+ font-size: 19.56px;
+ width:100%;
+ height:auto;
+ }
+  img {
+	max-width:100%; 
+ }
+video{
+	width:25.7rem;
+}
+}
+
+
+/*Risoluzione Emanuela*/
+@media screen and (min-width: 1900px) {
+ html {
+ font-size: 22.96px;
+ width:100%;
+ height:auto;
+}
+ img {
+	max-width: 100%; 
+	
+ }
+video{
+	width:30.6rem;
+}
+}
+
+/*RISOLUZIONI MAC*/
+@media screen and (min-width: 3000px) {
+ html {
+ font-size: 32.94px;
+ width:100%;
+ height:auto;
+}
+ img {
+	max-width: 100%; 
+	
+ }
+video{
+	width:48.31rem;
+}
+}
