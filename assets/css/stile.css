@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+#contenitore
+{
+	width: 100%;
+	margin: 0 auto; /* per azzerare */
+	padding: 0; /* per azzerare */
+}
+
+
+#testata,
+#contenuti,
+#footer
+{
+	width: 100%;
+	margin: 0;
+}
+
+
+#testata
+{
+	height: 15%;
+	padding: 0;
+}
+
+
+
+#contenuti
+{
+	height: 75%;
+	padding: 0;
+}
+
+#footer
+{
+	height: 10%;
+	padding: 0;
+}
+
+
+
+/* bottoni splash screen */
+	/* variabili */
+$btn-bg-1: #F3B32D;
+$btn-bg-2: #28AFB0;
+$btn-bg-3: #D78521;
+$btn-bg-4: #745296;
+$btn-bg-5: #3E8914;
+
+$btn-hover-effect-padding-vert: 22px;
+$btn-hover-effect-padding-horz: 36px;
+$icon-block-width: 40px;
+
+
+
+//transitions mixin
+@mixin transition-mix($property: all, $duration: 0.2s, $timing: linear, $delay: 0s) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing;
+  transition-delay: $delay;
+}
+
+//position absolute mixin
+@mixin position-absolute ($top: null, $left: null, $right: null, $bottom: null) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+/* effects styles !!!YOU NEED THEM */
+.btn-hover-effect {
+  @include transition-mix();
+  
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+  padding: $btn-hover-effect-padding-vert $btn-hover-effect-padding-horz;
+  
+  transform: translateZ(0);
+  
+  text-decoration: none;
+  
+  overflow: hidden;
+}
+
+/* effect 1 styles */
+.btn-hover-effect--effect-1 {  
+  
+  /* overlay block styles */
+  &:before {
+    @include position-absolute($top: 0, $left: 0);
+    @include transition-mix($property: transform);
+    
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    content: '';
+    
+    background-color: rgba(255,255,255, .2);
+    
+    transform: scale(0, 1);
+    transform-origin: right top;
+    
+    z-index: -1;
+  }
+  
+  /* icon styles */
+  &:after {
+    @include position-absolute($top: 1px, $right: (- $icon-block-width));
+    @include transition-mix();
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: $icon-block-width;
+    
+    content: '\f105';
+    
+    font: {
+      family: "Font Awesome 5 Free";
+      size: 25px;
+      weight: 900;
+    }
+    line-height: inherit;
+    
+    opacity: 0;
+  }
+  
+  //hover styles
+  &:hover {
+    padding-left: $btn-hover-effect-padding-horz - 10;
+    padding-right: $btn-hover-effect-padding-horz + 10;
+    
+    &:before {
+      transform: scale(1, 1);
+      
+      transform-origin: left top;
+    }
+    
+    &:after {
+      right: 0;
+      
+      opacity: 1;
+    }
+  }
+  
+}
