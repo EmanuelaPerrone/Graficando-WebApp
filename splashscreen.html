@@ -1,0 +1,108 @@
+<!--Spalshscreen Graficando
+Sviluppatori AD MAIORA>
+Sviluppata il 05/01/21-->
+<!DOCTYPE html>
+<html lang="it" class="h-100">
+<head>
+    <title>Graficando!</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=100, initial-scale=1.0, shrink-to-fit=no">
+	<!--Richiamo file css e js di bootstrap-4.5.3-->
+	 <link rel="stylesheet" href="assets\bootstrap-4.5.3-dist\css\bootstrap-grid.css">
+	 <link rel="stylesheet" href="assets\bootstrap-4.5.3-dist\css/bootstrap-reboot.css">
+	 <link rel="stylesheet" href="assets\bootstrap-4.5.3-dist\css\bootstrap.css">
+	 <script src="assets\bootstrap-4.5.3-dist\js\bootstrap.bundle.js"></script>
+	 <script src="assets\bootstrap-4.5.3-dist\js\bootstrap.js"></script>
+	<!--richiamo media query-->
+	 <link rel="stylesheet" media="screen" href="assets\mediaQuery\media.css"/>
+	 <!--richiamo icona app-->
+	<link rel="shortcun icon" href="assets/img/favicon.ico">
+	<!--richiamo del nostro file di stile-->
+	<link rel="stylesheet" href="assets\css\my_style.css">
+	<link rel="stylesheet" href="assets\css\splash.css">
+	<!-- richiamo dei file js per le animazioni -->
+	<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet"/>
+</head>
+<body onkeydown="shortcut(event);">
+<!-- Video background splash -->
+<video autoplay muted loop id="video">
+ <source src="assets/video/video-splash.mp4" type="video/mp4">
+ Il tuo browser non supporta HTML5.
+</video>
+
+	<!-- container per il logo -->
+      <div class="container-fluid">
+		<div class="row align-items-end" style="min-height: 26rem;">
+			<div class="col-3"> </div>
+			<div class="col-6">
+				<div class="text-center">
+					<img src="assets/img/logo.png" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-3"> </div>
+		</div>
+      </div>
+		<!--POSIZIONAMENTO TASTI E COPYRIGHT-->
+    <div class="container-fluid">
+		<div class="fixed-bottom">
+			<div class="row justify-content-md-center" style="min-height: 6rem;">
+				<div class="col-1.5"> <!-- Colonna bottone indietro-->
+			 <a href="#win16" class="btn-hover-effect btn-hover-effect--effect-2"  style="box-shadow: -webkit-box-shadow: -3px 3px 5px -2px #573F10;
+                                                                                                       -moz-box-shadow: -3px 3px 5px -2px #573F10;
+                                                                                                       -o-box-shadow: -3px 3px 5px -2px #573F10;
+                                                                                                        box-shadow: -3px 3px 5px -2px #573F10;"><b>ESCI</b></a>
+				</div>
+				<div class="col-md-7"></div> <!--spazio tra le due colonne-->
+				<div class="col-1.5"> <!-- Colonna bottone avanti-->
+					<a href="#win1" class="btn-hover-effect btn-hover-effect--effect-1"  style="box-shadow: -webkit-box-shadow: -3px 3px 5px -2px #573F10;
+                                                                                                       -moz-box-shadow: -3px 3px 5px -2px #573F10;
+                                                                                                       -o-box-shadow: -3px 3px 5px -2px #573F10;
+                                                                                                        box-shadow: -3px 3px 5px -2px #573F10;"><b>ENTRA</b></a>
+				</div>
+			</div>
+
+	<a href="splashscreen.html" class="overlay" id="win1"></a>
+	<div class="popup" style="padding: 0px;">
+		 <div class="head">
+			<h2 style="margin: 0px;"><b> ENTRA </b></h2>
+		 </div><br>
+		 <div class="text-center">
+		 <h2><font size="5"><font face="CASTELAR"><b>Benvenuto in GRAFICANDO!<br><br>Inserisci il tuo nome (Facoltativo): </b></font></font></h3>
+		 <input type="text" class="nome" style="border-color: #1c1c1c; border-radius: 6px;">
+         <a href="homepage.html"><button class="button button3" onkeydown="shortcut(event);">Entra</button></a><br><br>
+		 </div>
+		<a class="close1" title="Chiudi" href="#"><b>x</b></a>
+		<div class="foot"></div>
+	</div>
+
+	<a href="#" class="overlay" id="win16"></a>
+	<div class="popup" style="padding: 0px;">
+		 <div class="head">
+			<h2 style="margin: 0px;"><b> ESCI </b></h2>
+		 </div><br>
+		 <div class="text-center">
+		 <h3 style="font-size: 25px;">Sei sicuro di voler uscire?<br>Verrai reindirizzato a google.it.</h3><br>
+		 <a href="https://www.google.it/"><button class="button button1">Si</button></a>
+         <a href="#"><button class="button button2">No</button></a><br><br>
+		 </div>
+		<a class="close1" title="Chiudi" href="#"><b>x</b></a>
+		<div class="foot"></div>
+	</div>
+			<div class="row align-items-end" style="min-height: 1rem;">
+				<div class="col-1"></div>
+				<div class="col-10">
+				<div class="text-center"> <!--posizionamento del contenuto (descrizione) al centro-->
+					<small> <font color="white">
+						<b>Copyright: ©AD MAIORA (Uniba A.A. 2020-21)</b>
+					</font></small>
+				</div>
+				</div>
+				<div class="col-1"></div>
+			</div>
+		</div>
+	</div>
+    </body>
+
+</html>
